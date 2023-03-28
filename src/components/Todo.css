@@ -1,0 +1,66 @@
+.todo{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    outline: 1px solid rgb(207, 129, 190);
+    margin: 1rem;
+    box-shadow:  1px 1px .1em rgb(233, 197, 222), -1px -1px .3em rgb(233, 197, 222);
+}
+
+.todo .todo-edit-false{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.todo .edit{
+    color: black;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    outline: 1px solid rgb(0, 0, 0);
+    width: 1.5rem;
+    background-color:rgb(255, 255, 255)
+}
+
+.completo{
+    text-decoration-line: line-through;
+}
+
+#Incompleto, .button-incomplete{
+    background-color: rgb(255, 221, 221);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#Progreso,.button-inprogress{
+    background-color: rgb(228, 246, 255);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#Completo,.button-complete{
+    background-color: rgb(225, 252, 228);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.todo .buttons{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: flex-end;    
+}
+
+.buttons button{
+    text-shadow: 1px 1px 2px rgb(191, 188, 190);
+    border-radius: 0.3em;
+    border: 1.3px solid rgb(103, 102, 102);
+    /*cursor: pointer; ya lo pilla de TodoList no hace falta ponerlo aqui*/
+}
+
+.todo .todo-edit-false .edit{
+    background: linear-gradient(rgb(252, 225, 252), rgb(255, 211, 240));
+    border-radius: 0.3em;
+    justify-content: center;
+}

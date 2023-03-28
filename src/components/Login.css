@@ -1,0 +1,11 @@
+.todo-login{
+    background-color: rgb(255, 254, 255);
+    box-shadow:  3px 3px .5em rgb(233, 197, 222), -3px -3px .5em rgb(233, 197, 222);
+    margin: 3rem;
+    padding: 1rem;
+}
+
+.welcome{
+    color:rgb(0, 0, 0);
+    font-size: 1rem;
+}
