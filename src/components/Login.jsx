@@ -50,8 +50,8 @@ function Login (){
             <form onSubmit={onSubmitLogin}>
                 <input value = {password} onChange = {onChangePassword} placeholder="Password" />
             </form>
-            <button onClick={onSubmitLogin}>Log
-            <Link to = "/TodoList">in</Link>
+            <button onClick={onSubmitLogin}>Login
+            {/* <Link to = "/TodoList"></Link> Cambiar a todoList*/}
             </button>
             
 

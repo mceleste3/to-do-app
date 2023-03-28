@@ -44,7 +44,6 @@ function TodoList() {
     });
     if (searchList.length !== 0) {
       //si encuentra alguna coincidencia hace que aparezca la lista
-      setCopiaList([...todoList]);
       setTodoList(searchList);
       
     }
@@ -66,7 +65,6 @@ function TodoList() {
         }
       })
     );
-    setCopiaList([...todoList]);
   };
 
   const onTodoClicked = (index, checked) => {
@@ -85,11 +83,9 @@ function TodoList() {
         }
       })
     );
-    setCopiaList([...todoList]);
   };
   const removeCheckedItems = () => {
     setTodoList(todoList.filter((todo) => !todo.checked));
-    setCopiaList([...todoList]);
   };
 
   const listClick = () => {
@@ -223,6 +219,7 @@ function TodoList() {
         Delete
       </button>
       <button className="buttons-options" onClick={listClick}>List</button>
+      {/* Funcion no habilitada todavía */}
     </div>
   );
 }
